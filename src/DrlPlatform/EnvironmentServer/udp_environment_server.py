@@ -81,6 +81,6 @@ class EnvironmentServer(AbstractServer):
         """
         Method for sending the payload to environment hub
         """
-        socket_client = Socket(socket.AF_INET, socket.SOCK_STREAM) #type: ignore
+        socket_client = Socket(socket.AF_INET, socket.SOCK_DGRAM) #type: ignore
         byte_payload_to_send = struct.pack(sending_mask, *payload)
         socket_client.sendto(byte_payload_to_send, (self._client_host, self._client_port))
