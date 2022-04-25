@@ -3,7 +3,7 @@ from setuptools import setup, find_packages
 
 setup(
     name='drl_platform',
-    version='0.1',
+    version='0.1.3',
     license='MIT',
     author="Mark Sisin",
     author_email='markas050@gmail.com',

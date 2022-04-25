@@ -1,6 +1,6 @@
 import gym
 from typing import Optional
-from Core.Models.abstract_server import AbstractServer
+from DrlPlatform.Models.abstract_server import AbstractServer
 
 
 class PlatformEnvironment(gym.Env):

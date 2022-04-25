@@ -5,7 +5,7 @@ from socket import timeout
 from typing import Any, Iterable, List, Optional
 import struct
 import logging
-from Core.Models.abstract_server import AbstractServer
+from DrlPlatform.Models.abstract_server import AbstractServer
 
 class EnvironmentServer(AbstractServer):
     """UDP server for receiving the data from digital twins/ sending the data"""
