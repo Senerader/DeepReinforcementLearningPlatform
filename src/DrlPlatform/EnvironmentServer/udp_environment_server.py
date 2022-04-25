@@ -55,7 +55,7 @@ class EnvironmentServer(AbstractServer):
                 self._logger.info("Terminating socket server")
 
         self._server_thread = threading.Thread(target=_serve, name="UDP DRL server")
-        self._server_thread.run()
+        self._server_thread.start()
         self._logger.info("Running UDP environment server on: %s", str(self._server_host+":"+str(self._server_port)))
     
     def close_server(self):
